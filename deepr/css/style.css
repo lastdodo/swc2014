@@ -170,7 +170,6 @@ header {
 	right: 0;
 	padding-bottom: 20px;
 	top: 0;
-	overflow: hidden;
 	background-color: #334960;
 	transition: 0.2s ease;
 	-o-transition: 0.1s ease;
@@ -189,13 +188,18 @@ h1 {
 }
 header h1 a {
 	display: block;
-	overflow: hidden;
-	width: 108px;
+	width: 150px;
 	height: 43px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
 	text-indent: -999px;
 	transition: 0s ease;
 	-o-transition: 0s ease;
 	-webkit-transition: 0s ease;
+}
+header h1 a:hover {
+    overflow: visible;
 }
 
 header h1 a img {
@@ -279,10 +283,6 @@ header.page5 .men4 .hover{
 	padding-bottom: 190px;
 }
 
-header.page2 {
-	background-color: #f17c72;
-}
-
 header.page2 .hover {
 	background-color: #e6655e;
 }
@@ -294,19 +294,11 @@ header.page2 .hover {
 	padding-top: 230px;
 }
 
-header.page3{
-	background-color: #32ac97;
-}
-
 header.page3 .hover {
 	background-color: #46dcc7;
 }
 
 #page4 {
-	background-color: #7f4c76;
-}
-
-header.page4{
 	background-color: #7f4c76;
 }
 
@@ -318,19 +310,11 @@ header.page4 .hover {
 	background-color: #3f9fc9;
 }
 
-header.page5{
-	background-color: #3f9fc9;
-}
-
 header.page5 .hover {
 	background-color: #37637f;
 }
 
 .content {
-}
-
-.slogan h3 {
-	margin-bottom: 30px;
 }
 
 #page2 h3 span {
@@ -361,6 +345,7 @@ header.page5 .hover {
 	width: 69px;
 	height: 69px;
 	background: url(../images/socials.png) 0 0 no-repeat;
+    background-position: -87px 0;
 }
 
 .socials a:hover {
@@ -404,11 +389,29 @@ header.page5 .hover {
 	margin-bottom: 1px;
 }
 
-.slogan {
-	margin-bottom: 117px;
+.button {
+    	margin-top: 10px;
+    	margin-right: 10px;
+    	padding: 14px 26px;
+    	line-height: 100%;
+    	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    	color: #fff;
+    	display:inline-block;
+    	vertical-align: middle;
+    	text-align: center;
+    	cursor: pointer;
+    	font-weight: bold;
+    	transition: background 0.1s ease-in-out;
+    	-webkit-transition: background 0.1s ease-in-out;
+    	-moz-transition: background 0.1s ease-in-out;
+    	-ms-transition: background 0.1s ease-in-out;
+    	-o-transition: background 0.1s ease-in-out;
+    	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    	color: #fff;
+    	-webkit-border-radius: 3px;
+    	-moz-border-radius: 3px;
+    	border-radius: 3px;
 }
-
-
 
 .socials1 {
 	margin-top: 19px;
@@ -423,19 +426,14 @@ header.page5 .hover {
 	display: inline-block;
 	font-size: 0;
 	line-height: 0;
-	width: 31px;
 	height: 31px;
 	background: url(../images/soc1.png) 0 0 no-repeat;
+    background-position: -39px 0;
+    width: 32px;
 }
-
+    
 .socials1 a:hover {
 	opacity: 0.5;
-}
-
-.socials1 a+a {
-	width: 32px;
-	margin-left: 8px;
-	background-position: -39px 0;
 }
 
 .socials1 a+a+a {
@@ -503,10 +501,6 @@ header.page5 .hover {
 #page5 {
 	padding-top: 230px;
 	padding-bottom: 190px;
-}
-
-#page5 .slogan {
-	margin-bottom: 110px;
 }
 /****Map***/
 
@@ -595,7 +589,7 @@ footer a:hover {
 	display:none;
 	text-decoration:none;
 	position:fixed;
-	bottom:40px;
+	bottom:20px;
 	margin-right: -620px !important;
 	overflow:hidden;
 	width:45px;
@@ -610,4 +604,10 @@ footer a:hover {
 }
 #toTop:hover {
 	background-position: right 0;
+}
+
+
+.box_inner img {
+    width: 149px;
+    height: 149px;
 }
